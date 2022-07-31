@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <title>Todo</title>
+  </head>
+  <body>
+    <div class="container text-center">
+      <br />
+      <br />
+      <div class="card">
+        <div class="card-header">
+          <h1></h1>
+        </div>
+        <div class="card-body">
+          <form id="todoForm">
+            <label for="todoInput">New Todo:</label>
+            <input
+              type="text"
+              name="todo"
+              id="todoInput"
+              placeholder="Feed the cat"
+            />
+            <input type="submit" value="Submit" class="btn btn-primary" />
+          </form>
+        </div>
+        <div class="card-footer">
+          <hr />
+          <ol id="ol"></ol>
+        </div>
+      </div>
+    </div>
+    <!-- welcome modal -->
+    <div class="modal fade" id="welcome" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h5 class="modal-title w-100">Welcome to your to-do list!</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Cross out items by clicking on the pencil icon.</p>
+            <p>Delete items by clicking on the 'X'.</p>
+            <p>Drag and drop items to rearrange your list.</p>
+            <p>Personalize this to-do list by typing in your name:</p>
+            <input type="text" id="name" />
+            <button id="submitName">Submit</button>
+            <br />
+            <br />
+            <label for="check">Don't show this again</label>
+            <input type="checkbox" id="check" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
